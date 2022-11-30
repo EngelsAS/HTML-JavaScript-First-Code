@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        //01
+        var nomeDoAluno = "Pedro José"
+        //02
+        console.log(typeof(nomeDoAluno))
+        //03
+        function calcularPotencia(base, expoente){
+            return base**expoente
+        }
+        console.log(calcularPotencia(2,4))
+        //04
+        function calcularMedia(nota1, nota2, nota3){
+            return (nota1 + nota2 + nota3)/3
+        }
+        var media = calcularMedia(7,8,7)
+        console.log(media)
+        //05
+        function situacaoDoAluno(media){
+            if(media >= 7){
+                return "Aprovado"
+            }
+            else if(media >= 2.5 && media <= 6.9){
+                return "Na final"
+            }
+            else{
+                return "Reprovado"
+            }
+        }
+        console.log(situacaoDoAluno(media))
+        //06
+        var frutas = ["manga","maçã","abacaxi","acerola"]
+        console.log(frutas)
+        //07
+        frutas.push("uva")
+        console.log(frutas)
+        //08
+        frutas.shift()
+        console.log(frutas)
+        //09
+        var aluno = {
+            nome: "José",
+            serie: "7° ano",
+            situacao: "matriculado"
+        }
+        console.log(aluno)
+        //10
+        aluno.situacao = "aprovado"
+        console.log(aluno)
+    </script>
+    <title>Introdução a JavaScript</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
